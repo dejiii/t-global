@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'JakartaBold';
+  src: url('./fonts/static/PlusJakartaSans-Bold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JakartaMedium';
+  src: url('./fonts/static/PlusJakartaSans-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'JakartaRegular';
+  src: url('./fonts/static/PlusJakartaSans-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+body {
+  font-family: "JakartaRegular", system-ui;
+  color: black;
+}
+
+.bold {
+    font-family: "JakartaBold", system-ui;
+  }
+  
+  .medium{
+  font-family: "JakartaMedium", system-ui;
+
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
